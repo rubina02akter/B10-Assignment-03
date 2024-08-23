@@ -33,9 +33,9 @@
   </head>
   <body>
     <!-- Header part -->
-    <!-- bg-gradient-to-r from-gray-100 to-gray-50 -->
+    <!-- bg-gradient-to-r from-[rgba(255, 255, 255, 0)] to-[rgba(255, 255, 255, 1)]-->
     <header
-      class="container mx-auto "
+      class="container mx-auto bg-gradient-to-r from-[rgba(255, 255, 255, 0)] to-[rgba(255, 255, 255, 1)]"
     >
       <!-- Navbar -->
       <nav class="lg:mx-6 mx-auto">
@@ -58,10 +58,10 @@
           </div>
           <div class="navbar-end gap-3">
             <i
-              class="fa-solid fa-magnifying-glass bg-[rgb(255, 255, 255)] border p-2 rounded-full lg:visible invisible"
+              class="fa-solid fa-magnifying-glass bg-white border p-2 rounded-full lg:visible invisible"
             ></i>
             <i
-              class="fa-solid fa-cart-shopping bg-[rgb(255, 255, 255)] border p-2 rounded-full lg:visible invisible"
+              class="fa-solid fa-cart-shopping bg-white border p-2 rounded-full lg:visible invisible"
             ></i>
             <a class="btn bg-[#ABEF5F] rounded-full text-lg lg:visible invisible"
               >Book Consult<i
@@ -248,9 +248,9 @@
      <div class="flex lg:flex-row flex-col-reverse justify-around">
         
       <div class=" lg:w-1/3 w-full">
-        <img class="rounded-2xl" src="images/flat 3.jpg" alt="">
+        <img class="rounded-2xl mt-6 lg:mt-0" src="images/flat 3.jpg" alt="">
       </div>
-      <div class="space-y-4 pt-12">
+      <div class="space-y-4 pt-7">
         <h3 class="font-bold lg:text-5xl text-center lg:text-start text-3xl text-slate-700">Our Best Services</h3>
         <h1 class="font-bold lg:text-3xl text-xl text-center lg:text-start   text-slate-600">And here's how?We do insurance better</h1>
         <ul class="leading-10 text-lg text-slate-500">
@@ -258,11 +258,10 @@
           <li><i class="mr-3 fa-solid fa-square-check"></i>File a claim in 3 minutes</li>
           <li><i class="mr-3 fa-solid fa-square-check"></i>Easily manage your policy online</li>
           <li><i class="mr-3 fa-solid fa-square-check"></i>Skip the faxing,long paperwork $ unnecessary phone calls</li>
-          <li><i class="mr-3 fa-solid fa-square-check"></i>Get support from an America-based on team</li>
+          <li><i class="mr-3 fa-solid fa-square-check"></i>Get support from an America-based on team</li>       
         </ul>
+        <button class=" btn  bg-[#ABEF5F] text-slate-700  font-bold ">Learn more</button>
       </div>
-
-
 
      </div>
 
@@ -349,7 +348,9 @@
     <!-- Articles section -->
        <section class="container mx-auto px-7  lg:
        pb-12 pb-12 pt-6
-       bg-cover bg-center h-auto w-full" style="background-image: url(images/bg.jpg);">
+       bg-cover bg-center h-auto w-full" 
+       style="background-image: url(images/bg.jpg);">
+
         <div class="flex justify-center items-center">
           <button class="bg-[#ABEF5F33] px-7 py-2 rounded-3xl my-5"><i class="fa-solid fa-arrow-right mr-2"></i>Let’s Connect</button>
          </div>
