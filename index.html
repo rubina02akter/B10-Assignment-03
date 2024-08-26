@@ -30,12 +30,25 @@
         font-family: "Manrope", sans-serif;
       }
     </style>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                customeBg: "rgba(255, 255, 255, 1)",
+                customeWhite: "rgba(255, 255 ,255, 0)",
+              }
+            }
+          }
+        }
+      </script>
   </head>
   <body>
     <!-- Header part -->
     <!-- bg-gradient-to-r from-[rgba(255, 255, 255, 0)] to-[rgba(255, 255, 255, 1)]-->
     <header
-      class="container mx-auto bg-gradient-to-r from-[rgba(255, 255, 255, 0)] to-[rgba(255, 255, 255, 1)]"
+      class="container mx-auto bg-gradient-to-r from-customeWhite to-customeBg"
     >
       <!-- Navbar -->
       <nav class="lg:mx-6 mx-auto">
@@ -107,7 +120,7 @@
     <main>
       <!-- liveable spaces -->
       <section class="container mx-auto px-0 lg:px-6 mt-24  bg-gray-100">
-        <img class="pt-6 hidden lg:flex" src="images/Vector.png" alt="">
+        <img class="pt-6 hidden hover:bg-sky-500 transition lg:flex" src="images/Vector.png" alt="">
         <!-- grid -->
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 pb-12 ">
@@ -180,8 +193,6 @@
 
 
      </div>
-
-     <!--  -->
     
     </div>
       </section>
@@ -347,7 +358,7 @@
 
     <!-- Articles section -->
        <section class="container mx-auto px-7  lg:
-       pb-12 pb-12 pt-6 
+       pb-12 pb-12 pt-6
        bg-cover bg-center h-auto w-full" 
        style="background-image: url(images/bg.jpg);"
        
@@ -388,7 +399,7 @@
           ></a>
        
           </div>
-
+      
 
        </section>
 
